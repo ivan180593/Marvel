@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,29 +12,24 @@
 		2C175505255D7A2D00CCCC9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C175503255D7A2D00CCCC9F /* Main.storyboard */; };
 		2C175507255D7A2F00CCCC9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C175506255D7A2F00CCCC9F /* Assets.xcassets */; };
 		2C17550A255D7A2F00CCCC9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C175508255D7A2F00CCCC9F /* LaunchScreen.storyboard */; };
-		2C175515255D7A2F00CCCC9F /* CharacterListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C175514255D7A2F00CCCC9F /* CharacterListInteractorTests.swift */; };
-		2C175520255D7A2F00CCCC9F /* MarvelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C17551F255D7A2F00CCCC9F /* MarvelUITests.swift */; };
 		2C175548255D832100CCCC9F /* CharacterListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C175547255D832100CCCC9F /* CharacterListViewController.swift */; };
 		2C17554D255D832E00CCCC9F /* CharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C17554C255D832E00CCCC9F /* CharacterDetailViewController.swift */; };
 		2C175552255D834800CCCC9F /* CharacterListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C175551255D834800CCCC9F /* CharacterListProtocols.swift */; };
 		2C17555A255D835400CCCC9F /* CharacterDetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C175559255D835400CCCC9F /* CharacterDetailProtocols.swift */; };
 		2C175562255D83AD00CCCC9F /* CharacterListWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C175561255D83AD00CCCC9F /* CharacterListWorker.swift */; };
 		2C17556E255D868400CCCC9F /* URLSessionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C17556D255D868400CCCC9F /* URLSessionExtensions.swift */; };
-		2C175576255D88C500CCCC9F /* CharacterListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C175575255D88C500CCCC9F /* CharacterListModel.swift */; };
-		2C17557B255D8A1000CCCC9F /* CharacterDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C17557A255D8A1000CCCC9F /* CharacterDetailModel.swift */; };
+		2C175576255D88C500CCCC9F /* CharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C175575255D88C500CCCC9F /* CharacterModel.swift */; };
 		2C175583255D900300CCCC9F /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C175582255D900300CCCC9F /* SessionManager.swift */; };
 		2C175589255D92A500CCCC9F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2C175588255D92A500CCCC9F /* README.md */; };
 		2C175591255D946E00CCCC9F /* CharacterListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C175590255D946E00CCCC9F /* CharacterListPresenter.swift */; };
 		2C175596255D94E000CCCC9F /* CharacterListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C175595255D94E000CCCC9F /* CharacterListInteractor.swift */; };
-		2C17559E255D981800CCCC9F /* CharacterDetailWorkerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C17559D255D981800CCCC9F /* CharacterDetailWorkerProtocol.swift */; };
 		2C1755A3255DB1F500CCCC9F /* CharacterDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1755A2255DB1F500CCCC9F /* CharacterDetailPresenter.swift */; };
-		2C1755A8255DB25300CCCC9F /* CharacterDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1755A7255DB25300CCCC9F /* CharacterDetailInteractor.swift */; };
 		2C1755AD255DB37000CCCC9F /* CharacterListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1755AC255DB37000CCCC9F /* CharacterListRouter.swift */; };
 		2C1755B2255DC29900CCCC9F /* CharacterDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1755B1255DC29900CCCC9F /* CharacterDetailRouter.swift */; };
+		2CAF621A256D94C700A0EBE3 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 2CAF6219256D94C700A0EBE3 /* AlamofireImage */; };
 		2CB73E71255F45EC0089D21B /* ListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB73E70255F45EC0089D21B /* ListModel.swift */; };
-		2CB73E79255F4E5D0089D21B /* UIImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB73E78255F4E5D0089D21B /* UIImageViewExtensions.swift */; };
-		2CC4802F25602F1E003FBEAE /* CharacterListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC4802E25602F1E003FBEAE /* CharacterListPresenterTests.swift */; };
-		2CC480372560309B003FBEAE /* FakeClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC480362560309B003FBEAE /* FakeClasses.swift */; };
+		2CC518EB257164C400EC9900 /* CharacterListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC518E9257164C400EC9900 /* CharacterListTableViewCell.swift */; };
+		2CC518EC257164C400EC9900 /* CharacterListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CC518EA257164C400EC9900 /* CharacterListTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,10 +58,8 @@
 		2C175509255D7A2F00CCCC9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C17550B255D7A2F00CCCC9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C175510255D7A2F00CCCC9F /* MarvelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarvelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C175514255D7A2F00CCCC9F /* CharacterListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListInteractorTests.swift; sourceTree = "<group>"; };
 		2C175516255D7A2F00CCCC9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C17551B255D7A2F00CCCC9F /* MarvelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarvelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C17551F255D7A2F00CCCC9F /* MarvelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelUITests.swift; sourceTree = "<group>"; };
 		2C175521255D7A2F00CCCC9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C175547255D832100CCCC9F /* CharacterListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewController.swift; sourceTree = "<group>"; };
 		2C17554C255D832E00CCCC9F /* CharacterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewController.swift; sourceTree = "<group>"; };
@@ -74,21 +67,17 @@
 		2C175559255D835400CCCC9F /* CharacterDetailProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailProtocols.swift; sourceTree = "<group>"; };
 		2C175561255D83AD00CCCC9F /* CharacterListWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListWorker.swift; sourceTree = "<group>"; };
 		2C17556D255D868400CCCC9F /* URLSessionExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionExtensions.swift; sourceTree = "<group>"; };
-		2C175575255D88C500CCCC9F /* CharacterListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListModel.swift; sourceTree = "<group>"; };
-		2C17557A255D8A1000CCCC9F /* CharacterDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailModel.swift; sourceTree = "<group>"; };
+		2C175575255D88C500CCCC9F /* CharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterModel.swift; sourceTree = "<group>"; };
 		2C175582255D900300CCCC9F /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		2C175588255D92A500CCCC9F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2C175590255D946E00CCCC9F /* CharacterListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListPresenter.swift; sourceTree = "<group>"; };
 		2C175595255D94E000CCCC9F /* CharacterListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListInteractor.swift; sourceTree = "<group>"; };
-		2C17559D255D981800CCCC9F /* CharacterDetailWorkerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailWorkerProtocol.swift; sourceTree = "<group>"; };
 		2C1755A2255DB1F500CCCC9F /* CharacterDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailPresenter.swift; sourceTree = "<group>"; };
-		2C1755A7255DB25300CCCC9F /* CharacterDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailInteractor.swift; sourceTree = "<group>"; };
 		2C1755AC255DB37000CCCC9F /* CharacterListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListRouter.swift; sourceTree = "<group>"; };
 		2C1755B1255DC29900CCCC9F /* CharacterDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailRouter.swift; sourceTree = "<group>"; };
 		2CB73E70255F45EC0089D21B /* ListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListModel.swift; sourceTree = "<group>"; };
-		2CB73E78255F4E5D0089D21B /* UIImageViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtensions.swift; sourceTree = "<group>"; };
-		2CC4802E25602F1E003FBEAE /* CharacterListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListPresenterTests.swift; sourceTree = "<group>"; };
-		2CC480362560309B003FBEAE /* FakeClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeClasses.swift; sourceTree = "<group>"; };
+		2CC518E9257164C400EC9900 /* CharacterListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListTableViewCell.swift; sourceTree = "<group>"; };
+		2CC518EA257164C400EC9900 /* CharacterListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterListTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CAF621A256D94C700A0EBE3 /* AlamofireImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,9 +146,6 @@
 		2C175513255D7A2F00CCCC9F /* MarvelTests */ = {
 			isa = PBXGroup;
 			children = (
-				2CC480362560309B003FBEAE /* FakeClasses.swift */,
-				2C175514255D7A2F00CCCC9F /* CharacterListInteractorTests.swift */,
-				2CC4802E25602F1E003FBEAE /* CharacterListPresenterTests.swift */,
 				2C175516255D7A2F00CCCC9F /* Info.plist */,
 			);
 			path = MarvelTests;
@@ -167,7 +154,6 @@
 		2C17551E255D7A2F00CCCC9F /* MarvelUITests */ = {
 			isa = PBXGroup;
 			children = (
-				2C17551F255D7A2F00CCCC9F /* MarvelUITests.swift */,
 				2C175521255D7A2F00CCCC9F /* Info.plist */,
 			);
 			path = MarvelUITests;
@@ -177,8 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				2CB73E70255F45EC0089D21B /* ListModel.swift */,
-				2C175575255D88C500CCCC9F /* CharacterListModel.swift */,
-				2C17557A255D8A1000CCCC9F /* CharacterDetailModel.swift */,
+				2C175575255D88C500CCCC9F /* CharacterModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -205,6 +190,7 @@
 		2C17553D255D82E200CCCC9F /* CharacterList */ = {
 			isa = PBXGroup;
 			children = (
+				2CAF620B256D73D200A0EBE3 /* Cell */,
 				2C175551255D834800CCCC9F /* CharacterListProtocols.swift */,
 				2C1755AC255DB37000CCCC9F /* CharacterListRouter.swift */,
 				2C175595255D94E000CCCC9F /* CharacterListInteractor.swift */,
@@ -219,7 +205,6 @@
 			children = (
 				2C175559255D835400CCCC9F /* CharacterDetailProtocols.swift */,
 				2C1755B1255DC29900CCCC9F /* CharacterDetailRouter.swift */,
-				2C1755A7255DB25300CCCC9F /* CharacterDetailInteractor.swift */,
 				2C1755A2255DB1F500CCCC9F /* CharacterDetailPresenter.swift */,
 				2C17554C255D832E00CCCC9F /* CharacterDetailViewController.swift */,
 			);
@@ -230,7 +215,6 @@
 			isa = PBXGroup;
 			children = (
 				2C17556D255D868400CCCC9F /* URLSessionExtensions.swift */,
-				2CB73E78255F4E5D0089D21B /* UIImageViewExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -239,9 +223,17 @@
 			isa = PBXGroup;
 			children = (
 				2C175561255D83AD00CCCC9F /* CharacterListWorker.swift */,
-				2C17559D255D981800CCCC9F /* CharacterDetailWorkerProtocol.swift */,
 			);
 			path = Character;
+			sourceTree = "<group>";
+		};
+		2CAF620B256D73D200A0EBE3 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2CC518E9257164C400EC9900 /* CharacterListTableViewCell.swift */,
+				2CC518EA257164C400EC9900 /* CharacterListTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +252,9 @@
 			dependencies = (
 			);
 			name = Marvel;
+			packageProductDependencies = (
+				2CAF6219256D94C700A0EBE3 /* AlamofireImage */,
+			);
 			productName = Marvel;
 			productReference = 2C1754FA255D7A2D00CCCC9F /* Marvel.app */;
 			productType = "com.apple.product-type.application";
@@ -331,6 +326,9 @@
 				Base,
 			);
 			mainGroup = 2C1754F1255D7A2D00CCCC9F;
+			packageReferences = (
+				2CAF6218256D94C700A0EBE3 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+			);
 			productRefGroup = 2C1754FB255D7A2D00CCCC9F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -350,6 +348,7 @@
 				2C17550A255D7A2F00CCCC9F /* LaunchScreen.storyboard in Resources */,
 				2C175507255D7A2F00CCCC9F /* Assets.xcassets in Resources */,
 				2C175589255D92A500CCCC9F /* README.md in Resources */,
+				2CC518EC257164C400EC9900 /* CharacterListTableViewCell.xib in Resources */,
 				2C175505255D7A2D00CCCC9F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -380,20 +379,17 @@
 				2C175562255D83AD00CCCC9F /* CharacterListWorker.swift in Sources */,
 				2C175596255D94E000CCCC9F /* CharacterListInteractor.swift in Sources */,
 				2C1754FE255D7A2D00CCCC9F /* AppDelegate.swift in Sources */,
-				2C17559E255D981800CCCC9F /* CharacterDetailWorkerProtocol.swift in Sources */,
-				2C1755A8255DB25300CCCC9F /* CharacterDetailInteractor.swift in Sources */,
 				2C1755AD255DB37000CCCC9F /* CharacterListRouter.swift in Sources */,
 				2C175552255D834800CCCC9F /* CharacterListProtocols.swift in Sources */,
+				2CC518EB257164C400EC9900 /* CharacterListTableViewCell.swift in Sources */,
 				2C175591255D946E00CCCC9F /* CharacterListPresenter.swift in Sources */,
 				2C17554D255D832E00CCCC9F /* CharacterDetailViewController.swift in Sources */,
 				2C175548255D832100CCCC9F /* CharacterListViewController.swift in Sources */,
-				2C17557B255D8A1000CCCC9F /* CharacterDetailModel.swift in Sources */,
-				2C175576255D88C500CCCC9F /* CharacterListModel.swift in Sources */,
+				2C175576255D88C500CCCC9F /* CharacterModel.swift in Sources */,
 				2C1755B2255DC29900CCCC9F /* CharacterDetailRouter.swift in Sources */,
 				2C1755A3255DB1F500CCCC9F /* CharacterDetailPresenter.swift in Sources */,
 				2C17555A255D835400CCCC9F /* CharacterDetailProtocols.swift in Sources */,
 				2C175500255D7A2D00CCCC9F /* SceneDelegate.swift in Sources */,
-				2CB73E79255F4E5D0089D21B /* UIImageViewExtensions.swift in Sources */,
 				2C175583255D900300CCCC9F /* SessionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,9 +398,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CC4802F25602F1E003FBEAE /* CharacterListPresenterTests.swift in Sources */,
-				2C175515255D7A2F00CCCC9F /* CharacterListInteractorTests.swift in Sources */,
-				2CC480372560309B003FBEAE /* FakeClasses.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,7 +405,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C175520255D7A2F00CCCC9F /* MarvelUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -725,6 +717,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2CAF6218256D94C700A0EBE3 /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2CAF6219256D94C700A0EBE3 /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2CAF6218256D94C700A0EBE3 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2C1754F2255D7A2D00CCCC9F /* Project object */;
 }

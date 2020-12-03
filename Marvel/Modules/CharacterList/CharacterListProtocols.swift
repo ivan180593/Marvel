@@ -10,7 +10,7 @@ import UIKit
 // MARK: Wireframe
 protocol CharacterListRouterProtocol: AnyObject {
     func showDetail(from: UIViewController)
-    func configureDetail(_ vc: CharacterDetailViewController, characterId: Int, title: String)
+    func configureDetail(_ vc: CharacterDetailViewController, character: CharacterModel.ViewModel, title: String)
 }
 
 // MARK: Interactor
@@ -18,7 +18,7 @@ protocol CharacterListInteractorProtocol: AnyObject {
     var presenter: CharacterListPresenterProtocol? { get set }
     var worker: CharacterListWorkerProtocol { get }
     
-    func getCharacterList()
+    func getCharacterList(completion: @escaping ((Result<CharacterModel.NetworkResponse, Error>) -> Void))
 }
 
 // MARK: Presenter
@@ -27,8 +27,6 @@ protocol CharacterListPresenterProtocol: AnyObject {
     var view: CharacterListViewProtocol? { get }
     
     func getCharacters()
-    func characterListSuccess(response: CharacterListModel.NetworkResponse)
-    func characterListFailure(error: String)
 }
 
 // MARK: View
@@ -36,6 +34,6 @@ protocol CharacterListViewProtocol: AnyObject {
     var presenter: CharacterListPresenterProtocol? { get }
     var router: CharacterListRouterProtocol? { get }
     
-    func characterList(list: [CharacterListModel.ViewModel])
+    func characterList(list: [CharacterModel.ViewModel])
     func showError(_ error: String)
 }

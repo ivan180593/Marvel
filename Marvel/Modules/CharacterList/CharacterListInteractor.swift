@@ -20,16 +20,16 @@ final class CharacterListInteractor {
 
 // MARK: CharacterListInteractorProtocol
 extension CharacterListInteractor: CharacterListInteractorProtocol {
-    func getCharacterList() {
-        cancellable = worker.getList().sink(receiveCompletion: { [weak self](result) in
+    func getCharacterList(completion: @escaping ((Result<CharacterModel.NetworkResponse, Error>) -> Void)) {
+        cancellable = worker.getList().sink(receiveCompletion: { (result) in
             switch result {
             case .failure(let error):
-                self?.presenter?.characterListFailure(error: error.localizedDescription)
+                completion(.failure(error))
             default:
                 break
             }
-        }, receiveValue: { [weak self](result) in
-            self?.presenter?.characterListSuccess(response: result)
+        }, receiveValue: { (result) in
+            completion(.success(result))
         })
     }
 }

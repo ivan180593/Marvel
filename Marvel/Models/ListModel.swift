@@ -12,7 +12,6 @@ struct CharacterListDataModel: Decodable {
 }
 
 struct CharacterListResultModel: Decodable {
-    let id: Int
     let name: String
     let description: String
     let thumbnail: ThumbnailModel

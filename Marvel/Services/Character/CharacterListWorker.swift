@@ -9,7 +9,7 @@ import Foundation
 import Combine
 
 protocol CharacterListWorkerProtocol {
-    func getList() -> AnyPublisher<CharacterListModel.NetworkResponse, Error>
+    func getList() -> AnyPublisher<CharacterModel.NetworkResponse, Error>
 }
 
 final class CharacterListWorker {
@@ -24,7 +24,7 @@ final class CharacterListWorker {
 
 // MARK: CharacterListWorkerProtocol
 extension CharacterListWorker: CharacterListWorkerProtocol {
-    func getList() -> AnyPublisher<CharacterListModel.NetworkResponse, Error> {
+    func getList() -> AnyPublisher<CharacterModel.NetworkResponse, Error> {
         manager.get(path: path)
     }
 }

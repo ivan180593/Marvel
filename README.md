@@ -19,9 +19,3 @@ This proyect has four main folders:
 - Services: connections with the API. Use **Combine** framework for easier handling.
 - Modules: with two subfolders, one per each screen, contains the classes required by VIPER.
 - Models: application models.
-
-
-# Tests
-Two unit test with mock information:
-- The first to test if the **interactor** is able to receive the server response correctly.
-- The second to test if the **presenter** is able to receive the interactor information correctly.

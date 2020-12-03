@@ -33,7 +33,7 @@ extension CharacterListRouter: CharacterListRouterProtocol {
         from.performSegue(withIdentifier: CharacterListRouter.Segue.detail, sender: nil)
     }
     
-    func configureDetail(_ vc: CharacterDetailViewController, characterId: Int, title: String) {
-        CharacterDetailRouter.configure(vc, characterId: characterId, title: title)
+    func configureDetail(_ vc: CharacterDetailViewController, character: CharacterModel.ViewModel, title: String) {
+        CharacterDetailRouter.configure(vc, character: character, title: title)
     }
 }

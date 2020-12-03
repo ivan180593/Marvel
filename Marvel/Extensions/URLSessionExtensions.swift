@@ -14,6 +14,7 @@ extension URLSession {
             .map(\.data)
             .decode(type: T.self, decoder: decoder)
             .map{$0}
+            .receive(on: DispatchQueue.main)
             .eraseToAnyPublisher()
     }
 }

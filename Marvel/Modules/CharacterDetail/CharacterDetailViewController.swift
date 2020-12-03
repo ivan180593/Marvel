@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import Combine
+import AlamofireImage
 
 final class CharacterDetailViewController: UIViewController {
     @IBOutlet private weak var characterImageView: UIImageView!
@@ -15,45 +15,33 @@ final class CharacterDetailViewController: UIViewController {
     @IBOutlet private weak var imageActivityIndicatorView: UIActivityIndicatorView!
     @IBOutlet private weak var descriptionActivityIndicatorView: UIActivityIndicatorView!
     
-    private var imageViewCancellable: AnyCancellable?
     var presenter: CharacterDetailPresenterProtocol?
-    var router: CharacterDetailRouterProtocol?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupView()
+    }
+}
 
-        presenter?.viewDidLoad()
+// MARK: Private methods
+private extension CharacterDetailViewController {
+    func setupView() {
+        guard let character = presenter?.getCharacter() else { return }
+
+        characterImageView.layer.masksToBounds = true
+        characterImageView.layer.cornerRadius = characterImageView.frame.height / 2.0
+        
+        if let url = URL(string: character.path) {
+            self.characterImageView.af.setImage(withURL: url, completion:  { [weak self](response) in
+                self?.imageActivityIndicatorView.stopAnimating()
+            })
+        }
+        self.descriptionActivityIndicatorView.stopAnimating()
+        self.characterNameLabel.text = character.name
+        self.characterDescriptionLabel.text = character.description.isEmpty ? "No description" : character.description
     }
 }
 
 // MARK: CharacterDetailViewProtocol
 extension CharacterDetailViewController: CharacterDetailViewProtocol {
-    func characterDetail(detail: CharacterDetailModel.ViewModel) {
-        imageViewCancellable = characterImageView.fromUrl(detail.imagePath, placeholderName: "placeholder").sink { [weak self](image) in
-            self?.imageActivityIndicatorView.stopAnimating()
-            self?.characterImageView.layer.masksToBounds = true
-            if let height = self?.characterImageView.frame.height {
-                self?.characterImageView.layer.cornerRadius = height / 2.0
-            }
-            self?.characterImageView.image = image
-        }
-        DispatchQueue.main.async {
-            self.descriptionActivityIndicatorView.stopAnimating()
-            self.characterNameLabel.text = detail.name
-            self.characterDescriptionLabel.text = detail.description.isEmpty ? "No description" : detail.description
-        }
-    }
-    
-    func showError(_ error: String) {
-        DispatchQueue.main.async {
-            self.imageActivityIndicatorView.stopAnimating()
-            self.descriptionActivityIndicatorView.stopAnimating()
-            let alertController = UIAlertController(title: "Error", message: error, preferredStyle: .alert)
-            let acceptAction = UIAlertAction(title: "Retry", style: .default) { (alert) in
-                self.router?.back(from: self.navigationController)
-            }
-            alertController.addAction(acceptAction)
-            self.navigationController?.present(alertController, animated: true)
-        }
-    }
 }
